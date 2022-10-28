@@ -1,0 +1,22 @@
+@import '../../../../components/advantage-block/advantage-block';
+@import '../../../../components/advantage-card/advantages-card';
+
+.advantages {
+  padding: 100rem 0 120rem;
+
+  @include tablet {
+    padding: 70rem 0;
+  }
+
+  @include medium-mobile {
+    padding: 40rem 0;
+  }
+
+  &__item-col {
+    &:not(:last-child) {
+      @include mobile {
+        margin-bottom: 30rem;
+      }
+    }
+  }
+}

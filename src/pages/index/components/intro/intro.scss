@@ -1,0 +1,122 @@
+.intro {
+  padding-top: 148rem;
+  background: $color-egyptian-blue;
+  overflow: hidden;
+
+  @include medium-tablet {
+    padding-top: 130rem;
+  }
+
+  @include tablet {
+    padding-top: 105rem;
+  }
+
+  &__block {
+    position: relative;
+    z-index: 2;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: -36%;
+      top: 50%;
+      transform: translate(0, -31%);
+      width: 890rem;
+      height: 916rem;
+      background: center/cover no-repeat url(../img/section-intro/looper.svg);
+      opacity: .5;
+
+      @include tablet {
+        display: none;
+      }
+    }
+  }
+
+  &__title {
+    position: relative;
+    @include inter;
+    max-width: 899rem;
+    margin-bottom: 28rem;
+    font-size: 62rem;
+    line-height: 84rem;
+    background: linear-gradient(83.64deg, #24DFDF 12.25%, rgba(21, 230, 230, 0) 190.15%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    z-index: 2;
+
+    @include medium-tablet {
+      font-size: 54rem;
+      line-height: 70rem;
+    }
+
+    @include tablet {
+      font-size: 30rem;
+      line-height: 40rem;
+    }
+
+    @include medium-mobile {
+      font-size: 26rem;
+      line-height: 35rem;
+    }
+  }
+
+  &__row {
+    position: relative;
+    margin-bottom: 20rem;
+    z-index: 2;
+  }
+
+  &__button {
+    display: none;
+    position: relative;
+    z-index: 2;
+    margin-top: 15rem;
+    min-height: 60rem;
+    padding: 16rem 24rem;
+    font-size: 16rem;
+    line-height: 24rem;
+
+    &:hover {
+      background: $color-white;
+      color: $color-vampire-black;
+    }
+
+    @media (max-width: 1199px) {
+      display: inline-flex;
+    }
+
+    @include medium-mobile {
+      width: 100%;
+      font-size: 14rem;
+      line-height: 21rem;
+    }
+  }
+
+  &__text {
+    color: $color-white;
+
+    &--1 {
+      @include medium-mobile {
+        margin-bottom: 10rem;
+      }
+    }
+  }
+
+  &__img {
+    position: relative;
+    bottom: -44rem;
+    filter: drop-shadow(0px -26px 54px rgba(0, 0, 0, 0.15));
+    height: 459rem;
+    max-width: unset;
+    border-radius: 3px;
+    z-index: 2;
+
+    @include mobile {
+      height: 334rem;
+      bottom: -20rem;
+      margin-top: 20rem;
+    }
+  }
+}

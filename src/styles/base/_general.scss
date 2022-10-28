@@ -1,0 +1,87 @@
+html {
+  font-size: 1px;
+}
+
+body {
+  font-size: 16rem;
+  @include inter();
+  color: $color-vampire-black;
+  scroll-behavior: smooth;
+  background: $color-anti-flash-white;
+  overflow-x: hidden;
+
+  @include medium-mobile {
+    font-size: 14rem;
+    line-height: 21rem;
+  }
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
+.container {
+  padding: 0 20rem;
+}
+
+section {
+  padding: 100rem 0;
+
+  @include tablet {
+    padding: 70rem 0;
+  }
+
+  @include medium-mobile {
+    padding: 40rem 0;
+  }
+}
+
+.sprite {
+  position: absolute;
+  left: -200vw;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sprite-symbol-usage {
+  display: block !important;
+}
+
+h2 {
+  @include inter;
+  font-size: 48rem;
+  line-height: 65rem;
+  font-weight: 400;
+  margin-bottom: 40rem;
+
+  @include medium-tablet {
+    font-size: 40rem;
+    line-height: 44rem;
+    margin-bottom: 30rem;
+  }
+  @include mobile {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.section-title {
+  &--white {
+    color: $color-white;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.shadow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba($color-vampire-black, .4);
+  z-index: 3;
+}

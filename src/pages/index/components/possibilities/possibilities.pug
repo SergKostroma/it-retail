@@ -1,0 +1,77 @@
+include ../../../../components/button/button
+include ../../../../components/possibility-card/possibility-card
+
+section.possibilities#possibilities
+  .container
+    .possibilities__title-container
+      h2.section-title.section-title--white.possibilities__title Внедрение Решения «ИТ-Ритейл»,
+        |
+        |
+        span.possibilities__gradient <br>предоставит следующие возможности
+    .possibilities__row.row
+      .possibilities__item-col.col-12.col-md-6.col-lg-4
+        +possibility-card({
+          icon: 'check',
+          title: 'Одновременное размещение в едином каталоге фронт-витрины',
+          description: 'Как крупных брендов, так и небольшого производства, которое не обладает электронной выгрузкой и электронным документооборотом'
+        }).possibilities__card
+      .possibilities__item-col.col-12.col-md-6.col-lg-4
+        +possibility-card({
+          icon: 'check',
+          title: 'Возможность открытия нескольких пунктов выдачи заказов в 1 городе',
+          light: true
+        }).possibilities__card
+      .possibilities__item-col.col-12.col-md-6.col-lg-4
+        +possibility-card({
+          icon: 'check',
+          title: 'Предоставление платформы для представителей малого и среднего бизнеса',
+          description: 'Для продвижения собственных товаров с целью обеспечения их развития'
+        }).possibilities__card
+      .possibilities__item-col.col-12.col-md-6.col-lg-4
+        +possibility-card({
+          icon: 'check',
+          title: 'Аналитический блок позволит выявлять тренды и актуальные направления рынка',
+          description: 'А также, поведенческие колебания в спросе у конечного потребителя'
+        }).possibilities__card
+      .possibilities__item-col.col-12.col-md-6.col-lg-4
+        +possibility-card({
+          icon: 'check',
+          title: 'Координация работы  Распределительного центра',
+          description: 'Позволит производить удаленное и централизованное управление поставками, сортировкой и комплектацией грузов на различные города и ПВЗ'
+        }).possibilities__card
+      .possibilities__item-col.col-12.col-md-6.col-lg-4
+        +possibility-card({
+          icon: 'check',
+          title: 'Внедрение систем лояльности покупателя',
+          description: 'Увеличение числа повторных заказов и клиентов'
+        }).possibilities__card
+      .possibilities__item-col.col-12.col-md-6.col-lg-4
+        +possibility-card({
+          icon: 'check',
+          title: 'Системы мониторинга и уведомлений',
+          description: 'Позволят клиентам в режиме реального времени видеть своего курьера, с точным прогнозом прибытия на место адресата',
+          dark: true
+        }).possibilities__card
+      .possibilities__item-col.col-12.col-md-6.col-lg-4
+        +possibility-card({
+          icon: 'check',
+          title: 'Модель управления складскими товарами',
+          description: 'Где на каждое действие автоматически генерируется электронный документ и производится логирование всех действий компании и клиентов, что позволяет контролировать большое количество операций в системе, сократив влияние человеческого фактор'
+        }).possibilities__card
+      .possibilities__item-col.col-12.col-md-6.col-lg-4
+        +possibility-card({
+          icon: 'check',
+          title: 'Модернизированное и современное ядро системы',
+          description: 'Позволит производить гибкую настройку и точечную доработку функционала в короткие сроки'
+        }).possibilities__card
+      .possibilities__item-col.col-12.col-md-6
+        +possibility-card({
+          icon: 'check',
+          title: 'Единое окно по управлению компанией',
+          description: 'Управляйте целой компанией из одного окна',
+          autoHeight: true,
+        }).possibilities__card
+      .possibilities__item.col-12.col-lg-6
+        .possibilities__action-card
+          h2.possibilities__action-card-title Внедрить «ИТ-Ритейл»
+          +button('Внедрить к себе', true, '#integration').possibilities__action-card-button.scroll-to

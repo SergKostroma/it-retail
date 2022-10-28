@@ -1,0 +1,37 @@
+include ../../../../components/logo/logo
+
+footer.footer
+  .container
+    .footer__row.row.d-flex.d-md-none.footer__info
+      .footer__line
+        +logo().footer__logo
+        .footer__creator Продукт <a href="https://vamdodoma.ru/" target="_blank" class="footer__creator-link">ВАМДОДОМА</a>
+    .footer__row.row.footer__info2
+      .col-12.col-md-8.order-1.order-md-0
+        .footer__list-inner
+          .footer__list
+            .footer__list-title Документы
+            ul.footer__list-ul
+              li.footer__list-item
+                a.footer__list-link(href="/docs/Политика конфиденциальности, ИТ-Ритейл.pdf", target="_blank") Политика конфиденциальности
+              li.footer__list-item
+                a.footer__list-link(href="/docs/Реквизиты ООО ВАМДОДОМА, ИТ-Ритейл.pdf", target="_blank") Реквизиты компании
+          .footer__list
+            .footer__list-title Документация
+            ul.footer__list-ul
+              li.footer__list-item
+                a.footer__list-link(href="/docs/Руководство пользователя, ИТ-Ритейл.pdf", target="_blank") Руководство пользователя
+              li.footer__list-item
+                a.footer__list-link(href="/docs/Описание функциональных характеристик ПО, ИТ-Ритейл.pdf", target="_blank") Описания функциональных характеристик
+      .col-12.col-md-4.d-flex.align-items-start.align-items-md-end.flex-column.order-0.order-md-1.footer__contacts
+        a.footer__tel(href="tel:+78007770835") 8 800 777-08-35
+        a.footer__mail(href="mailto:info@riteilmarket.ru") info@riteilmarket.ru
+    .footer__row.row.d-none.d-md-flex
+      .footer__line
+        +logo().footer__logo
+        .footer__creator Продукт <a href="https://vamdodoma.ru/" target="_blank" class="footer__creator-link">ВАМДОДОМА</a>
+    .footer__row.row
+      .col-12.col-sm-6.footer__rights
+        p.footer__text Программное обеспечение является собственной разработкой компании ООО «ВАМДОДОМА», исключительные права на ПО принадлежат компании-разработчику.
+      .col-12.col-sm-6
+        p.footer__text Программное обеспечение не требует установки, для работы клиенту потребуется лишь браузер и выход в интернет.

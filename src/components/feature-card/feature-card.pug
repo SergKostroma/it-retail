@@ -1,0 +1,8 @@
+mixin feature-card(options)
+  if typeof options === 'object'
+    .feature-card(class=`${options.bg ? 'feature-card--active' : ''}`)&attributes(attributes)
+      .feature-card__icon-container
+        +icon(options.icon).feature-card__icon
+      .feature-card__body
+        h3.feature-card__title= options.title
+        p.feature-card__desc= options.description

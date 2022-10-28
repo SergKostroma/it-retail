@@ -1,0 +1,8 @@
+mixin advantage-block(text)
+  .advantage-block&attributes(attributes)
+    p.advantage-block__text !{text}
+
+mixin advantage-block2(text, desc)
+  .advantage-block.advantage-block--v2&attributes(attributes)
+    p.advantage-block__text !{text}
+    p.advantage-block__desc= desc

@@ -1,0 +1,7 @@
+mixin input(type, name, label, mask)
+  .input-field&attributes(attributes)
+    label.input-field__label(for= name)= label
+    if (mask)
+      input.input-field__input(type= type name= name id= name data-mask= mask)
+    else
+      input.input-field__input(type= type name= name id= name)

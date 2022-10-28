@@ -1,0 +1,95 @@
+@mixin big-desktop {
+  @media (max-width: 1600px) {
+    @content;
+  }
+}
+
+@mixin only-desktop {
+  @media (min-width: 1025px) {
+    @content;
+  }
+}
+
+@mixin big-tablet {
+  @media (max-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin medium-tablet {
+  @media (max-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin only-big-tablet {
+  @media (max-width: 1440px) and (min-width: 1025px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin only-tablet {
+  @media (max-width: 1024px) and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin only-mobile {
+  @media (max-width: 767px) and (min-width: 376px + 1px) {
+    @content;
+  }
+}
+
+@mixin only-mobile-to-medium-mobile {
+  @media (max-width: 767px) and (min-width: 575px + 1px) {
+    @content
+  }
+}
+
+@mixin medium-mobile {
+  @media (max-width: 575px) {
+    @content;
+  }
+}
+
+@mixin small-mobile {
+  @media (max-width: 376px) {
+    @content;
+  }
+}
+
+@mixin smallest-mobile {
+  @media (max-width: 374px) {
+    @content;
+  }
+}
+
+@mixin little-mobile {
+  @media(max-width: 300px) {
+    @content;
+  }
+}
+
+@mixin object-fit($fit: fill, $position: null) {
+  -o-object-fit: $fit;
+  object-fit: $fit;
+  @if $position {
+    -o-object-position: $position;
+    object-position: $position;
+    font-family: 'object-fit: #{$fit}; object-position: #{$position}';
+  } @else {
+    font-family: 'object-fit: #{$fit}';
+  }
+}

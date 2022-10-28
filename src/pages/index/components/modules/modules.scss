@@ -1,0 +1,84 @@
+@import '../../../../components/module-block/module-block';
+
+.modules {
+  padding: 0 0 120rem;
+
+  @include medium-tablet {
+    padding: 0 0 100rem;
+  }
+
+  @include tablet {
+    padding: 0 0 70rem;
+  }
+
+  @include medium-mobile {
+    padding: 0 0 40rem;
+  }
+
+  &__block-container {
+    margin-bottom: 20rem;
+    padding: 45px 40rem 40rem;
+    background: $color-egyptian-blue;
+    border-radius: 4rem;
+
+    @include tablet {
+      padding: 30rem;
+    }
+
+    @media (max-width: 400px) {
+      padding: 30rem 20rem;
+    }
+
+    &--light {
+      background: $color-green-blue;
+    }
+  }
+
+  &__block-title {
+    margin-bottom: 40rem;
+    @include interMedium();
+    font-size: 24rem;
+    line-height: 36rem;
+    color: $color-white;
+
+    @include mobile {
+      font-size: 20rem;
+      line-height: 30rem;
+    }
+  }
+
+  &__row {
+    position: relative;
+    padding: 30rem 0;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 8rem;
+      width: calc(100% - 16rem);
+      height: 1px;
+      background: rgba($color-white, .2);
+    }
+
+    &:first-of-type {
+      padding-top: 0;
+    }
+
+    &:last-of-type {
+      padding-bottom: 0;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    .modules__col {
+      &:not(:last-child) {
+        @include mobile {
+          margin-bottom: 30rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+mixin advantage-card(options)
+  if (typeof options === 'object')
+    .advantage-card&attributes(attributes)
+      .advantage-card__icon-container
+        +icon(options.icon).advantage-card__icon
+      .advantage-card__body
+        h3.advantage-card__title= options.title
+        p.advantage-card__desc= options.description

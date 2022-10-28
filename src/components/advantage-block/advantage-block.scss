@@ -1,0 +1,87 @@
+.advantage-block {
+  $p: &;
+
+  position: relative;
+  background: $color-white;
+  border-radius: 4rem;
+  margin-bottom: 60rem;
+  padding: 40rem;
+  overflow: hidden;
+
+  @include mobile {
+    margin-bottom: 40rem;
+    padding: 30rem;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -9rem;
+    right: -70rem;
+    display: block;
+    width: 770rem;
+    height: 770rem;
+    background: center/contain no-repeat url('../img/section-advantages/advantage-block-bg.png');
+
+    @include tablet {
+      opacity: .4;
+      right: -240rem;
+    }
+
+    @include medium-mobile {
+      right: -70rem;
+    }
+  }
+
+  &--v2 {
+    margin-bottom: 0;
+    &::before {
+      top: -67%;
+      right: -27%;
+      width: 1129px;
+      height: 1129px;
+      background: center/cover no-repeat url('../img/section-advantages/advantage-block-bg2.png');
+
+      @include medium-tablet {
+        opacity: .4;
+      }
+
+      @include tablet {
+        top: -20%;
+        right: 25%;
+        width: 800rem;
+        height: 800rem;
+      }
+
+      @include medium-mobile {
+        right: 3%;
+      }
+    }
+
+    #{$p}__text {
+      max-width: 638rem;
+      margin-bottom: 20rem;
+    }
+
+    #{$p}__desc {
+      max-width: 478rem;
+    }
+  }
+
+  &__text {
+    max-width: 510rem;
+    font-size: 24rem;
+    line-height: 36rem;
+    @include interMedium();
+    z-index: 2;
+
+    @include tablet {
+      font-size: 20rem;
+      line-height: 30rem;
+    }
+
+    span {
+      color: $color-egyptian-blue;
+    }
+  }
+}

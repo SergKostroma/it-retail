@@ -1,0 +1,86 @@
+.possibility-card {
+  $p: &;
+  display: flex;
+  flex-direction: column;
+  padding: 30rem;
+  min-height: 414rem;
+  height: 100%;
+  border-radius: 4rem;
+  background: $color-indigo-dye;
+
+  @include tablet {
+    min-height: 350rem;
+  }
+
+  @include mobile {
+    min-height: auto;
+    height: auto;
+    padding: 20rem;
+  }
+
+  &--auto-height {
+    height: auto;
+    min-height: 272rem;
+
+    @include tablet {
+      height: 100%;
+    }
+
+    @include mobile {
+      height: auto;
+      min-height: auto;
+    }
+
+    #{$p}__title {
+      max-width: 316rem;
+    }
+  }
+
+  &--light {
+    background: $color-green-blue;
+  }
+
+  &--dark {
+    background: $color-dark-imperial-blue;
+  }
+
+  &__title-container {
+    margin-bottom: 20rem;
+
+    @include mobile {
+      margin-bottom: 42rem;
+    }
+  }
+
+  &__icon-container {
+    margin-bottom: 8px;
+  }
+
+  &__icon {
+    width: 24rem;
+    height: 24rem;
+    fill: $color-bright-turquoise;
+  }
+
+  &__title {
+    @include interMedium();
+    color: $color-white;
+    font-size: 24rem;
+    line-height: 36rem;
+
+    @include medium-tablet {
+      font-size: 20rem;
+      line-height: 30rem;
+    }
+
+    @include mobile {
+      font-size: 18rem;
+      line-height: 30rem;
+    }
+  }
+
+  &__desc {
+    margin-top: auto;
+    color: $color-pale-lavender;
+  }
+}

@@ -1,0 +1,64 @@
+@import "../components/header/header";
+@import "../components/aside/aside";
+@import "../components/breadcrumbs/breadcrumbs";
+@import "../components/footer/footer";
+
+.layout-default {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+
+  min-height: 100%;
+
+  background-color: $color-light-yellow;
+
+  &__main {
+    width: 100%;
+    flex-grow: 1;
+    padding-bottom: 90rem;
+
+    @include big-tablet {
+      padding-bottom: 80rem;
+    }
+
+    @include mobile {
+      padding-bottom: 70rem;
+    }
+
+    @include medium-mobile {
+      padding-bottom: 50rem;
+    }
+  }
+
+  &__header {
+    padding: 20rem 0 15rem;
+
+    @include medium-mobile {
+      padding: 30rem 0 15rem;
+    }
+
+    &--without-title {
+      @include medium-mobile {
+        padding: 30rem 0 0;
+      }
+    }
+
+    &--detail-page {
+      @include medium-mobile {
+        padding: 0;
+      }
+    }
+  }
+
+  &__breadcrumbs {
+    margin-bottom: 15rem;
+    @include medium-mobile {
+      display: none;
+    }
+  }
+
+  &__title {
+    margin-bottom: 0;
+  }
+}

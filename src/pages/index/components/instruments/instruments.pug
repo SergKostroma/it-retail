@@ -1,0 +1,48 @@
+include ../../../../components/instrument-block/instrument-block
+
+section.instruments#instruments
+  .container
+    h2.section-title.instruments__title Инструменты Решения «ИТ-Ритейл»
+    .row.instruments__row
+      .col-12.col-lg-6.instruments__item-col
+        +instrument-block({
+          title: 'Табличный вид',
+          description: 'Изучайте данные в удобной таблице. <br>Настраивайте нужные столбцы и редактируйте данные.',
+          src: './img/section-instruments/1.png',
+          number: 1
+        }).instruments__item.instruments__item--1
+      .col-12.col-lg-6.instruments__item-col
+        +instrument-block({
+          title: 'Фильтры',
+          description: 'Отсеивайте ненужные значения. Узкие фильтры для каждого модуля Решения «ИТ-Ритейл»',
+          src: './img/section-instruments/2.png',
+          number: 2
+        }).instruments__item.instruments__item--2
+      .col-12.col-lg-6.instruments__item-col
+        +instrument-block({
+          title: 'Категории',
+          description: 'Удобная навигация по категориям товаров',
+          src: './img/section-instruments/3.png',
+          number: 3
+        }).instruments__item.instruments__item--3
+      .col-12.col-lg-6.instruments__item-col
+        +instrument-block({
+          title: 'Статусы',
+          description: 'Яркие статусы помогут отслеживать нужные товары',
+          src: './img/section-instruments/4.png',
+          number: 4
+        }).instruments__item.instruments__item--4
+      .col-12.col-lg-6.instruments__item-col
+        +instrument-block({
+          title: 'Поиск по данным',
+          description: 'Поиск по данным в таблице поможет быстро найти нужные данные',
+          src: './img/section-instruments/5.png',
+          number: 5
+        }).instruments__item.instruments__item--5
+      .col-12.col-lg-6.instruments__item-col
+        +instrument-block({
+          title: 'Экспорт в Excel',
+          description: 'Экспортируйте данные в удобную таблицу',
+          src: './img/section-instruments/6.png',
+          number: 6
+        }).instruments__item.instruments__item--6

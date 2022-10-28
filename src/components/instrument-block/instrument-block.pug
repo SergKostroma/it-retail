@@ -1,0 +1,7 @@
+mixin instrument-block(options)
+  if (typeof options === 'object')
+    .instrument-block&attributes(attributes)
+      h3.instrument-block__title= options.title
+      p.instrument-block__desc !{options.description}
+      .instrument-block__img-container
+        img.instrument-block__img.lozad(data-src= options.src alt="" class=`${options.number ? 'instrument-block__img--' + options.number : ''}`)

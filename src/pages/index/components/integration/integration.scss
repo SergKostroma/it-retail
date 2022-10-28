@@ -1,0 +1,244 @@
+@import '../../../../components/input/input';
+
+.integration {
+  position: relative;
+  background: $color-egyptian-blue;
+  padding: 66rem 0 60rem;
+  overflow: hidden;
+
+  @include tablet {
+    padding: 70rem 0;
+  }
+
+  @include mobile {
+    background: $color-black;
+  }
+
+  @include medium-mobile {
+    padding: 40rem 0;
+  }
+
+  &--tablet {
+    display: none;
+    background: $color-egyptian-blue;
+
+    @include mobile {
+      display: block;
+    }
+
+    .container {
+      &::after {
+        display: block !important;
+        right: -62% !important;
+        bottom: -81% !important;
+      }
+    }
+  }
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: $color-black;
+    z-index: 2;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  .container {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: -17%;
+      bottom: -46%;
+      width: 770rem;
+      height: 790rem;
+      background: center/cover no-repeat url('../img/section-integration/looper.svg');
+      opacity: .45;
+
+      @include mobile {
+        display: none;
+      }
+    }
+  }
+
+  &__form-block {
+    &--hidden {
+      display: none;
+    }
+  }
+
+  &__form {
+    position: relative;
+    z-index: 2;
+    max-width: 402rem;
+
+    @include tablet {
+      width: 100%;
+      padding-right: 40rem;
+    }
+
+    @include mobile {
+      padding-right: 0;
+    }
+
+    &-title {
+      margin-bottom: 30px;
+      @include interMedium();
+      font-size: 24rem;
+      line-height: 36rem;
+      color: $color-white;
+
+      @include tablet {
+        font-size: 20rem;
+        line-height: 30rem;
+      }
+    }
+
+    &-submit {
+      margin-bottom: 26rem;
+    }
+
+    &-rules {
+      color: $color-old-silver;
+
+      &-link {
+        color: $color-silver-foil;
+        text-decoration: none;
+        transition: .3s;
+
+        &:hover {
+          color: $color-white;
+        }
+      }
+    }
+  }
+
+  &__list {
+    position: relative;
+    margin-left: 60rem;
+    z-index: 2;
+
+    @include tablet {
+      margin-left: 40rem;
+    }
+
+    @include mobile {
+      margin-left: 0;
+    }
+
+    &--desktop {
+      @include mobile {
+        display: none;
+      }
+    }
+
+    &-title {
+      max-width: 404rem;
+      @include interMedium();
+      font-size: 24rem;
+      line-height: 36rem;
+      color: $color-white;
+      margin-bottom: 106rem;
+
+      @include tablet {
+        font-size: 20rem;
+        line-height: 30rem;
+        margin-bottom: 70rem;
+      }
+
+      @include medium-mobile {
+        margin-bottom: 40rem;
+      }
+    }
+
+    &-item {
+      position: relative;
+      padding-left: 34rem;
+      margin-bottom: 20rem;
+      @include interMedium();
+      font-size: 20rem;
+      line-height: 30rem;
+      color: $color-white;
+
+      @include medium-tablet {
+        font-size: 18rem;
+        line-height: 26rem;
+      }
+
+      @include tablet {
+        font-size: 16rem;
+        line-height: 24rem;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 3rem;
+        left: 0;
+        width: 20rem;
+        height: 20rem;
+        background-image: url('../img/section-integration/check.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+    }
+  }
+
+  &__success-block {
+    display: none;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    color: $color-white;
+
+    &--shown {
+      display: flex;
+    }
+
+    &-icon {
+      width: 36rem;
+      height: 36rem;
+      margin-bottom: 18rem;
+      fill: $color-bright-turquoise;
+    }
+
+    &-title {
+      @include interMedium();
+      font-size: 24rem;
+      line-height: 36rem;
+      margin-bottom: 12rem;
+      max-width: 339rem;
+    }
+
+    &-message {
+      display: block;
+      font-size: 20rem;
+      line-height: 30rem;
+      margin-bottom: 32rem;
+      color: rgba($color-white, .5);
+      max-width: 339rem;
+    }
+
+    &-button {
+      align-self: flex-start;
+    }
+  }
+}
+
+.just-validate-error-label {
+  font-size: 14rem;
+  line-height: 20rem;
+  margin-top: 4rem;
+  color: #b25068 !important;
+}

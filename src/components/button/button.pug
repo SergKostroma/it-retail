@@ -1,0 +1,5 @@
+mixin button(text, isLink, href)
+  if (!isLink)
+    button.button&attributes(attributes)= text
+  else
+    a.button(href= href)&attributes(attributes)= text

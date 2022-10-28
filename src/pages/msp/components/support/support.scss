@@ -1,0 +1,59 @@
+.support{
+    padding-top: 145px;
+   
+
+    &__title{
+        font-size: 62px;
+        line-height: 84px;
+        @include inter();
+        padding-bottom: 55px;
+    }
+    &__about{
+        position: relative;
+        display:flex;
+        max-width: 1192px;
+        width:100%;
+        background-color: $color-white;
+        padding: 40px 0 53px 40px;
+        border-radius: 4px;
+    }
+
+    &__description-text{
+        max-width:510px;
+        font-size: 16px;
+        @include inter();
+        padding-bottom: 32px;
+        margin-right: 50px;
+
+    }
+    &__action-button{
+        color:$color-white;
+        background-color:$color-egyptian-blue ;
+        padding: 16rem 24rem;
+        font-size: 16rem;
+        line-height: 24rem;
+        min-height: auto;
+        &:hover {
+            text-decoration: none;
+            background: $color-bright-turquoise;
+            // color:$color-egyptian-blue;
+          }
+    }
+    &__start-image{
+        position: absolute;
+        right: -165px;
+        top:-240px;
+    }
+    
+}
+
+.initiators{
+    display: flex;
+    flex-direction: column;
+    gap:27px;
+
+    &__item{
+        display: block;
+       
+    }
+}

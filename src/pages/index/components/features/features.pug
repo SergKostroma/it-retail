@@ -1,0 +1,31 @@
+include ../../../../components/feature-card/feature-card
+
+section.features
+  .container
+    h2.section-title «ИТ-Ритейл» позволит
+    .row.features__cards
+      .col-12.col-md-6.features__card-col
+        +feature-card({
+          icon: 'optimization',
+          title: 'Оптимизировать',
+          description: 'внутренние и внешние процессы предприятия'
+        }).features__item
+      .col-12.col-md-6.features__card-col
+        +feature-card({
+          icon: 'money',
+          title: 'Сократить',
+          description: 'временные затраты физических и юридических лиц по формированию заказов и процедуры оформления'
+        }).features__item
+      .col-12.col-md-6.features__card-col
+        +feature-card({
+          icon: 'management',
+          title: 'Управлять',
+          description: 'Процессами компании и партнеров из удаленного офиса',
+          bg: true
+        }).features__item
+      .col-12.col-md-6.features__card-col
+        +feature-card({
+          icon: 'connect',
+          title: 'Производить',
+          description: 'Оперативное подключение к фронт-витрине товаропроизводителей'
+        }).features__item

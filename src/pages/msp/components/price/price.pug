@@ -1,0 +1,13 @@
+include ../../../../components/button/button
+
+section.price#price
+  .container
+    .price__inner
+      .price__promo
+        h3.price__promo-title  200&nbsp;000&nbsp;₽
+        .price__promo-out 400&nbsp;000&nbsp;₽
+        .price__promo-discount 
+          p.price__promo-discount-inner 50%
+      p.price__integration Стоимость неисключительной лицензии по субсидии
+      +button('Отправить заявку', true).price__action-button
+      img.price__monitor.lozad(data-src="./img/section-price/display.png" alt="")

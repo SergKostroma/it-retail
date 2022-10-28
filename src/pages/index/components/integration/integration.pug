@@ -1,0 +1,43 @@
+include ../../../../components/input/input
+include ../../../../components/button/button
+
+.integration#integration
+  .container
+    .row.g-0
+      .col-12.col-md-6
+        .integration__form-block
+          form.integration__form#integration-form
+            h4.integration__form-title Внедрить «ИТ-Ритейл»
+            .integration__form-group
+              +input('text', 'name', 'Ваше имя')
+              +input('tel', 'phone', 'Номер телефона', '+7 (999) 999 99 99')
+              +input('email', 'email', 'Электронная почта')
+            +button('Внедрить к себе')(type="submit" class="integration__form-submit")
+            p.integration__form-rules Нажимая кнопку «Оставить заявку», вы соглашаетесь с <a href="/docs/Политика конфиденциальности, ИТ-Ритейл.pdf" target="_bank" class="integration__form-rules-link">политикой конфиденциальности</a>
+        .integration__success-block
+          +icon('check').integration__success-block-icon
+          .integration__success-block-title Заявка успешно создана
+          span.integration__success-block-message Наш менеджер перезвонит вам в течении рабочего дня
+          +button('Хорошо').integration__success-block-button
+      .col-12.col-md-6
+        .integration__list.integration__list--desktop
+          h4.integration__list-title По итогу внедрения Решения «ИТ-Ритейл», удастся добиться:
+          ul.integration__ul
+            li.integration__list-item Централизованного управления компанией
+            li.integration__list-item Систематизации обрабатываемых данных
+            li.integration__list-item Повышения надежности хранения данных
+            li.integration__list-item Стандартизации и автоматизации бизнес-процессов
+            li.integration__list-item Повышения скорости принятия решений
+            li.integration__list-item Обеспечения прозрачности операций
+
+.integration.integration--tablet
+  .container
+    .integration__list
+      h4.integration__list-title По итогу внедрения Решения «ИТ-Ритейл», удастся добиться:
+      ul.integration__ul
+        li.integration__list-item Централизованного управления компанией
+        li.integration__list-item Систематизации обрабатываемых данных
+        li.integration__list-item Повышения надежности хранения данных
+        li.integration__list-item Стандартизации и автоматизации бизнес-процессов
+        li.integration__list-item Повышения скорости принятия решений
+        li.integration__list-item Обеспечения прозрачности операций

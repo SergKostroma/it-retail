@@ -1,0 +1,35 @@
+include ../../../../components/logo/logo
+include ../../../../components/button/button
+
+header.header
+  .container
+    .header__inner
+      +logo().header__logo
+      nav.header__nav
+        a.header__link.scroll-to(href="#processes") Бизнес-процессы
+        a.header__link.scroll-to(href="#possibilities") Возможности
+        a.header__link.scroll-to(href="#advantages") Преимущества
+        a.header__link.scroll-to(href="#instruments") Инструменты
+        a.header__link.scroll-to(href="#modules") Компоненты
+      .header__right-block
+        +button('Внедрить к себе', true, '#integration').header__button.header__button--desktop.scroll-to
+        .header__burger
+          .header__burger-inner
+            span.header__burger-span
+            span.header__burger-span
+            span.header__burger-span
+            span.header__burger-span
+  .header__mobile
+    .header__mobile__inner
+      .container
+        ul.header__mobile-list
+          li.header__mobile-list-item
+            a.header__mobile-list-link.scroll-to(href="#processes") Бизнес-процессы
+          li.header__mobile-list-item
+            a.header__mobile-list-link.scroll-to(href="#possibilities") Возможности
+          li.header__mobile-list-item
+            a.header__mobile-list-link.scroll-to(href="#advantages") Преимущества
+          li.header__mobile-list-item
+            a.header__mobile-list-link.scroll-to(href="#instruments") Инструменты
+          li.header__mobile-list-item
+            a.header__mobile-list-link.scroll-to(href="#modules") Компоненты

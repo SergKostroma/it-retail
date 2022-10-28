@@ -1,0 +1,15 @@
+@import '../../../../components/feature-card/feature-card';
+
+.methods {
+  &__cards {
+    margin-bottom: -16rem;
+  }
+
+  &__card-col {
+    margin-bottom: 16rem;
+  }
+
+  &__item {
+    height: 100%;
+  }
+}

@@ -1,0 +1,36 @@
+@import '../../../../components/process-btn/process-btn';
+
+.processes {
+  padding: 0 0 100rem;
+
+  @include tablet {
+    padding: 0 0 70rem;
+  }
+
+  @include medium-mobile {
+    padding: 0 0 40rem;
+  }
+
+  &__title-container {
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__buttons {
+    margin-bottom: -8rem;
+  }
+
+  &__row1,
+  &__row2,
+  &__row3 {
+    margin: 0 -4rem;
+  }
+
+  &__item-col {
+    padding: 0 4px;
+    margin-bottom: 8rem;
+  }
+}

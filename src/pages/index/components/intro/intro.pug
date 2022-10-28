@@ -1,0 +1,14 @@
+include ../../../../components/button/button
+
+.intro
+  .container
+    .intro__block
+      h1.intro__title Идеальное Решение <br>для логистических компаний
+      .intro__row.row
+        .col-12.col-sm-6
+          p.intro__text.intro__text--1 Комплексная система управления бизнес-процессами предприятия, включающая в себя управление финансами и активами, закупками, складом, логистикой, трудовыми ресурсами и клиентами
+        .col-12.col-sm-6
+          p.intro__text Обеспечивает непрерывную балансировку и оптимизацию ресурсов предприятия в сегменте мебели и товаров для дома (DIY)
+      +button('Внедрить к себе', true, '#integration').intro__button.scroll-to
+
+    img.intro__img.lozad(data-src="./img/section-intro/app.png" alt="")

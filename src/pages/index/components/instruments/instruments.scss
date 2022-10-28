@@ -1,0 +1,127 @@
+@import '../../../../components/instrument-block/instrument-block';
+
+.instruments {
+  padding: 90rem 0 80rem;
+  background: $color-dark-imperial-blue;
+
+  @include tablet {
+    padding: 70rem 0;
+  }
+
+  @include medium-mobile {
+    padding: 40rem 0;
+  }
+
+  &__title {
+    margin-bottom: 50rem;
+    background: linear-gradient(83.64deg, #24DFDF 12.25%, rgba(21, 230, 230, 0) 190.15%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+    @include medium-tablet {
+      margin-bottom: 40rem;
+    }
+  }
+
+  &__row {
+    margin: 0 -16rem -60rem;
+
+    @include medium-tablet {
+      margin: 0 -16rem -40rem;
+    }
+  }
+
+  &__item-col {
+    padding: 0 16rem;
+    margin-bottom: 60rem;
+
+    @include medium-tablet {
+      margin-bottom: 40rem;
+    }
+  }
+
+  &__item {
+    height: 100%;
+
+    &--1 {
+      .instrument-block__img-container {
+        @media (max-width: 400px) {
+          height: 190rem;
+        }
+      }
+    }
+    &--2 {
+      .instrument-block__img-container {
+        @include mobile {
+          height: 250rem;
+        }
+
+        @media (max-width: 500px) {
+          height: 200rem;
+        }
+
+        @media (max-width: 400px) {
+          height: 190rem;
+        }
+      }
+    }
+    &--3 {
+      .instrument-block__img-container {
+        @include mobile {
+          height: 250rem;
+        }
+
+        @media (max-width: 500px) {
+          height: 200rem;
+        }
+
+        @media (max-width: 400px) {
+          height: 190rem;
+        }
+      }
+    }
+    &--4 {
+      .instrument-block__img-container {
+        @include mobile {
+          height: 250rem;
+        }
+
+        @media (max-width: 400px) {
+          height: 190rem;
+        }
+      }
+    }
+    &--5 {
+      .instrument-block__img-container {
+        @include medium-mobile {
+          height: 280rem;
+        }
+
+        @media (max-width: 500px) {
+          height: 230rem;
+        }
+
+        @media (max-width: 400px) {
+          height: 190rem;
+        }
+      }
+    }
+    &--6 {
+      .instrument-block__img-container {
+        @include mobile {
+          height: 250rem;
+        }
+
+        @media (max-width: 500px) {
+          height: 220rem;
+        }
+
+        @media (max-width: 400px) {
+          height: 190rem;
+        }
+      }
+    }
+  }
+}

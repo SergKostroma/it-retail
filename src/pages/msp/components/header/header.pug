@@ -1,0 +1,34 @@
+include ../../../../components/logo/logo
+include ../../../../components/button/button
+
+header.header
+  .container
+    .header__inner
+      +blue-logo().header__logo
+      nav.header__nav
+        a.header__link.scroll-to(href="#possibilities") Возможности
+        a.header__link.scroll-to(href="#modules") Компоненты
+        a.header__link.scroll-to(href="#methods") Получить скидку
+        a.header__link.scroll-to(href="#price") Стоимость
+      .header__right-block
+        +button('Отправить заявку', true, '#integration').header__button-request.header__button--desktop.
+        .header__burger
+          .header__burger-inner
+            span.header__burger-span
+            span.header__burger-span
+            span.header__burger-span
+            span.header__burger-span
+  .header__mobile
+    .header__mobile__inner
+      .container
+        ul.header__mobile-list
+         
+          li.header__mobile-list-item
+            a.header__mobile-list-link.scroll-to(href="#possibilities") Возможности
+          li.header__mobile-list-item
+            a.header__mobile-list-link.scroll-to(href="#modules") Компоненты  
+          li.header__mobile-list-item
+            a.header__mobile-list-link.scroll-to(href="#methods") Получить скидку
+          li.header__mobile-list-item
+            a.header__mobile-list-link.scroll-to(href="#price") Стоимость
+          

@@ -1,0 +1,39 @@
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 78rem;
+  padding: 24rem 42rem;
+  @include inter;
+  font-size: 20rem;
+  line-height: 30rem;
+  text-decoration: none;
+  color: $color-black;
+  background: $color-white;
+  box-shadow: 0 0 4rem rgba(0, 0, 0, 0.04), 0 8rem 16rem rgba(0, 0, 0, 0.08);
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  transition: all .15s;
+
+  &:hover {
+    text-decoration: none;
+    background: $color-egyptian-blue;
+    color: $color-white;
+  }
+
+  @include tablet {
+    min-height: 60rem;
+    padding: 16rem 24rem;
+    font-size: 16rem;
+    line-height: 24rem;
+  }
+
+  @include mobile {
+    min-height: 53rem;
+    padding: 16rem 24rem;
+    font-size: 14rem;
+    line-height: 21rem;
+  }
+}

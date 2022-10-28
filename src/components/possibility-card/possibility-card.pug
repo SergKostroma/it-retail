@@ -1,0 +1,9 @@
+mixin possibility-card(options)
+  if (typeof options === 'object')
+    .possibility-card(class=`${options.light ? 'possibility-card--light' : ''} ${options.dark ? 'possibility-card--dark' : ''} ${options.autoHeight ? 'possibility-card--auto-height' : ''}`)&attributes(attributes)
+      .possibility-card__title-container
+        .possibility-card__icon-container
+          +icon(options.icon).possibility-card__icon
+        h3.possibility-card__title= options.title
+      if (options.description)
+        p.possibility-card__desc= options.description

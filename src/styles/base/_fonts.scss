@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'inter';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  src: local('inter'), local('inter'), url('../fonts/Inter/inter-regular-webfont.woff2') format('woff2'),
+  url('../fonts/Inter/inter-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'interMedium';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+  src: local('inter'), local('inter'), url('../fonts/Inter/inter-medium-webfont.woff2') format('woff2'),
+  url('../fonts/Inter/inter-medium-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'interSemiBold';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+  src: local('inter'), local('inter'), url('../fonts/Inter/inter-semibold-webfont.woff2') format('woff2'),
+  url('../fonts/Inter/inter-semibold-webfont.woff') format('woff');
+}
+
+@mixin inter {
+  font-family: inter, sans-serif;
+  font-weight: 400;
+}
+
+@mixin interMedium {
+  font-family: interMedium, sans-serif;
+  font-weight: 500;
+}
+
+@mixin interSemiBold {
+  font-family: interSemiBold, sans-serif;
+  font-weight: 600;
+}

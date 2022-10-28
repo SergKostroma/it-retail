@@ -1,0 +1,38 @@
+.process-btn {
+  min-height: 78px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24rem 10rem;
+  text-align: center;
+  @include interMedium();
+  font-size: 20rem;
+  line-height: 30rem;
+  color: $color-egyptian-blue;
+  background: $color-white;
+  border-radius: 4rem;
+
+  &--active {
+    color: $color-white;
+    background: $color-egyptian-blue;
+  }
+
+  @include big-tablet {
+    font-size: 18rem;
+    line-height: 26rem;
+  }
+
+  @include tablet {
+    min-height: 60rem;
+    padding: 10rem 20rem;
+    font-size: 16rem;
+    line-height: 24rem;
+  }
+
+  @include medium-mobile {
+    font-size: 14rem;
+    line-height: 21rem;
+    padding: 8rem 15rem;
+  }
+}

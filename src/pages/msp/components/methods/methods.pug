@@ -1,0 +1,22 @@
+include ../../../../components/feature-card/feature-card
+
+section.methods#methods
+  .container
+    h2.section-title Как получить скидку
+    .row.methods__cards
+      .col-12.col-md-6.methods__card-col
+        +feature-card({
+          icon: 'star',
+          title: 'Состоять в реестре СМП',
+          description: 'Проверьте, есть ли ваша организация или ИП в реестре СМСП ФНС России. Если нет, мы можем предоставить скидку.Но вы можете подать заявку на внесение в реестр. Его данные обновляются 10-го числа каждого месяца.'
+           
+        }).methods__item
+      .col-12.col-md-6.methods__card-col
+        +feature-card({
+          icon: 'request',
+          title: 'Отправить нам заявку на подключение по субсидии',
+          description: 'Наш менеджер позвонит вам, проконсультирует. Если все хорошо, мы выставим счет на годовую оплату тарифа со скидкой 50%.'
+        
+        }).methods__item
+
+  

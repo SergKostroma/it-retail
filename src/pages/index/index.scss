@@ -1,0 +1,20 @@
+@import './components/header/header';
+@import './components/intro/intro';
+@import './components/features/features';
+@import './components/processes/processes';
+@import './components/possibilities/possibilities';
+@import './components/instruments/instruments';
+@import './components/advantages/advantages';
+@import './components/modules/modules';
+@import './components/price/price';
+@import './components/integration/integration';
+@import './components/footer/footer';
+
+.shadow {
+  display: none;
+  transition: .6s;
+
+  &--shown {
+    display: block;
+  }
+}

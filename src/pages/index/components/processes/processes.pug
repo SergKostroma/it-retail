@@ -1,0 +1,64 @@
+include ../../../../components/process-btn/process-btn
+
+section.processes#processes
+  .container
+    .processes__title-container
+      h2.section-title.processes__title Бизнес-процессы
+      span.processes__desc Задействованные в рамках внедрения Решения «ИТ-Ритейл»
+    .processes__buttons
+      .processes__row1.row
+        .col-6.col-md-4.col-lg-3.processes__item-col
+          +process-btn('Открытие ПВЗ', true)
+        .col-6.col-md-4.col-lg-3.processes__item-col
+          +process-btn('Управление ПВЗ')
+        .col-12.col-md-4.col-lg-3.processes__item-col
+          +process-btn('Документооборот')
+        .col-12.col-lg-3.processes__item-col
+          +process-btn('Управление Складом')
+      .processes__row2.row
+        .col-6.col-sm-4.processes__item-col
+          +process-btn('Инвентаризация')
+        .col-6.col-sm-4.processes__item-col
+          +process-btn('Сортировка товара')
+        .col-12.col-sm-4.processes__item-col
+          +process-btn('Набор товара', true)
+      .processes__row3.row
+        .col-12.col-sm-6.processes__item-col
+          +process-btn('Управление Распределительным центром')
+        .col-12.col-sm-6.processes__item-col
+          +process-btn('Назначение Водителей')
+      .processes__row2.row
+        .col-6.col-sm-4.processes__item-col
+          +process-btn('Назначение Экспедиторов')
+        .col-6.col-sm-4.processes__item-col
+          +process-btn('Поиск Специалистов')
+        .col-12.col-sm-4.processes__item-col
+          +process-btn('Проверка контрагентов')
+      .processes__row2.row
+        .col-6.col-sm-4.processes__item-col
+          +process-btn('Управление Поставщиками', true)
+        .col-6.col-sm-4.processes__item-col
+          +process-btn('Управление Партнерами')
+        .col-12.col-sm-4.processes__item-col
+          +process-btn('Управление Клиентами')
+      .processes__row2.row
+        .col-6.col-sm-4.processes__item-col
+          +process-btn('Управление Пользователями')
+        .col-6.col-sm-4.processes__item-col
+          +process-btn('Управление Поставками')
+        .col-12.col-sm-4.processes__item-col
+          +process-btn('Доставка товара', true)
+      .processes__row1.row
+        .col-6.col-3.processes__item-col
+          +process-btn('Перемещение товара')
+        .col-6.col-3.processes__item-col
+          +process-btn('Финансы')
+        .col-6.col-3.processes__item-col
+          +process-btn('Отчетность')
+        .col-6.col-3.processes__item-col
+          +process-btn('Управление Возвратом')
+      .processes__row3.row
+        .col-12.col-sm-6.processes__item-col
+          +process-btn('Работа с возражениями')
+        .col-12.col-sm-6.processes__item-col
+          +process-btn('Управление Программой лояльности')

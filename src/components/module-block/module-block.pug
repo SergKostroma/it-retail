@@ -1,0 +1,11 @@
+mixin module-block(options)
+  if (typeof options === 'object')
+    .module-block&attributes(attributes)
+      h3.module-block__title= options.title
+      if (options.items)
+        .module-block__list
+          each item in options.items
+            .module-block__button
+              .module-block__button-tooltip
+                .module-block__button-tooltip-box= item.tooltip
+              span.module-block__button-text= item.name

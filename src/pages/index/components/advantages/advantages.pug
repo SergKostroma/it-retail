@@ -1,0 +1,20 @@
+include ../../../../components/advantage-block/advantage-block
+include ../../../../components/advantage-card/advantage-card
+
+section.advantages#advantages
+  .container
+    h2.section-title.advantages-title Дополнительные преимущества
+    +advantage-block('Возможна модернизация практически любой электронно-торговой площадки <span>в&nbsp;многофункциональный маркетплейс</span>').advantages__block
+    .row.advantages__row
+      .col-12.col-md-6.advantages__item-col
+        +advantage-card({
+          icon: 'infrastructure',
+          title: 'Решение позволяет разворачивать инфраструктуру по управлению поставщиками любой формации',
+          description: 'Грамотная организация товарно-складского хранения и распределения приводит к многократному увеличению ассортиментной матрицы и целевого трафика покупателей'
+        })
+      .col-12.col-md-6.advantages__item-col
+        +advantage-card({
+          icon: 'speed',
+          title: 'Решение позволяет разворачивать инфраструктуру по управлению поставщиками любой формации',
+          description: 'Грамотная организация товарно-складского хранения и распределения приводит к многократному увеличению ассортиментной матрицы и целевого трафика покупателей'
+        })
