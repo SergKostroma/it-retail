@@ -35,7 +35,9 @@
       font-size: 48px;
       line-height: 90%;
       background-clip: text;
-      background-color: linear-gradient(90deg, #0B0B0B 23.75%, rgba(11, 11, 11, 0) 140.76%);
+      color:transparent;
+      
+      background-image: linear-gradient(90deg, #0B0B0B 23.75%, rgba(11, 11, 11, 0) 140.76%);
       text-fill-color: transparent;
       -webkit-background-clip: text;
       
@@ -50,6 +52,16 @@
         font-size: 22rem;
         line-height: 32rem;
       }
+
+      &::before {
+        content: '';
+        position: absolute;
+        max-width:144px;
+        width:100%;
+        height:100%;
+        background-color: linear-gradient(90deg, #0B0B0B 23.75%, rgba(11, 11, 11, 0) 140.76%);       
+      
+      }
     }
     &__promo-out{
       max-width:430px;
@@ -57,7 +69,17 @@
       margin-bottom: 10rem;
       font-size: 28px;
       line-height: 90%;
-      text-decoration:line-through;
+      
+      &::before {
+        content: '';
+        position: absolute;
+        max-width:144px;
+        width:100%;
+        height:3%;
+        border-bottom: 2px solid rgba(0,0,0,0.5);        
+      
+      }
+     
     }
     &__promo-discount{
       position: relative;
